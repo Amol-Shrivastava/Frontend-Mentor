@@ -1,0 +1,117 @@
+@import "utilities";
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+  //padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-size: 62.5%;
+  min-height: 100vh;
+  overflow-x:hidden;
+  @include flex();
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+//TEXT SECTION***********************
+.text {
+  &-box {
+    background-image: url("../images/pattern-curve.svg");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: contain;
+    @include flex(column, center);
+  }
+
+  &-container{
+    text-align: left;
+    font-size: 2.39rem;
+    font-weight: 300;
+    color: var(--text-clr);
+    line-height: 1.4;
+    z-index: 99;
+    transform: translate(10.2rem, 2rem);
+    position:relative;
+  }
+
+  &-quotes{
+    position:absolute;
+    top: -3.8rem;
+    left: 7rem;
+  }
+}
+
+.signature {
+  &-cont {
+    margin-top: 2.3rem;
+    display: inline-flex;
+    align-items: center;
+    }
+
+  &-name {
+    font-size: 1.1rem;
+    color: var(--text-clr);
+    font-weight: 700;
+  }
+
+  &-post {
+    font-size: 1.1rem;
+    margin-left: .7rem;
+    color: var(--post-clr);
+  }
+}
+
+//IMAGE SECTION***************************
+.img {
+  &-box {
+    background-image: url("../images/pattern-bg.svg");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: cover;
+    padding:5rem 0;
+    position:relative;
+  }
+
+  &-container {
+    position: relative;
+    left: 4.2rem;
+    @include shadow(0, 3px, 6px, .2);
+    display: inline-block;
+  }
+
+  &-person {
+    @include size(100%, 100%);
+  }
+
+  &__buttons{
+      border: 1px solid #fff;
+      position:absolute;
+      bottom: 3rem;
+      left: 8rem;
+      @include size(3.3rem, 5.7rem);
+      background-color: #fff;
+      display:inline-flex;
+      justify-content:space-between;
+      align-items:center;
+      padding: 1rem .9rem;
+      border-radius: 30px;
+      @include shadow(0, 6px, 10px, .3);
+      cursor: pointer;
+    &-prev,
+    &-next{
+        margin-top: 3px;
+    }
+  }
+}
+
+.hidden{
+  display: none;
+  transition: all .4s ease-out;
+}
