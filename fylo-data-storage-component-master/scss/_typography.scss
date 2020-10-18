@@ -1,0 +1,52 @@
+.download{
+  &-text{
+    padding: 1.2rem 2rem 1rem;
+    font-size: .9rem;
+    filter:brightness(75%);
+    // font-weight:200;
+    letter-spacing: .5px;
+    font-family: var(--font);
+  }
+
+  &-downloaded{
+    font-size: .8rem;
+    filter:brightness(70%);
+    font-family: var(--font);
+    font-weight: 700;
+    padding-top: .5rem;
+  }
+}
+
+.lighter{
+  // filter:brightness(200%);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.additional{
+  &-gb-number{
+  font-size: 1.7rem;
+  font-family: var(--font);
+  font-weight: var(--fw-dark);
+}
+
+&-gb-text{
+  margin-left: .5rem;
+  font-size: .7rem;
+  font-family: var(--font);
+  color:var(--grayish-blue);
+  font-weight: var(--fw-dark);
+}
+}
+
+
+.one{
+  font-size: 1rem;
+
+}
+
+.five{
+  font-size: 1.1rem;
+  position:relative;
+  top: .10rem;
+}

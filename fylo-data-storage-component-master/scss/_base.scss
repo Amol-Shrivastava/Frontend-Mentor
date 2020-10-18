@@ -1,0 +1,198 @@
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+
+h1,
+h2,
+h3,
+p{
+  margin: 0;
+}
+
+img{
+  max-width: 100%;
+  display:block;
+}
+
+a{
+  text-decoration: none;
+}
+
+body{
+  box-sizing: border-box;
+  font-size: 87.5%;  //1rem = 14px
+
+  @media (max-width: 1000px){
+    font-size: 62.5%; //1rem = 10px
+  }
+  // background-image: linear-gradient(102deg, red, yellow);
+  background-color: var(--very-dark-blue);
+  min-height: 100vh;
+}
+
+.logo{
+
+  &-container{
+    // box-sizing: content-box;
+    height: 53%;
+    min-height: 187px;
+    width: 106%;
+    position:absolute;
+    z-index: 5;
+    top: -5.86rem;
+    left:0;
+    border-radius: 5px 95px 5px 5px;
+    display:inline-block;
+    // margin: 0 auto;
+    padding: 2.0rem 3rem 1rem 2.6rem;
+    background-color: var(--dark-blue);
+    border:1px solid var(--dark-blue);
+    box-shadow:  0 20px 40px rgba(0,0,0,0.4);
+    // border: 3px solid red;
+
+    // border-bottom: 8px solid purple;
+    // overflow-x: hidden;
+    @media (max-width: 500px){
+
+    }
+  }
+
+  &-download-options{
+    position:absolute;
+    // border: 2px solid #fff;
+    bottom: 2.4rem;
+    left: 2.6rem;
+    // width: 100%;
+    display: flex;
+    // padding: 1rem;
+    .svg-icon{
+      &:not(:last-child){
+        margin-right: .9rem;
+      }
+      // border:1px solid white;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      padding:.55rem;
+      margin-top: 2rem;
+      background-color: var(--very-dark-blue);
+      border-radius: 7px;
+      cursor:pointer;
+    }
+
+  }
+}
+
+
+.download{
+
+  &-container{
+    position:absolute;
+    z-index: 5;
+    left:2.6rem;
+    top:-3.1rem;
+    width:100%;
+    max-width: 550px;
+    // padding:.2rem 1.2rem .3rem;
+    padding-top: 1rem;
+    border-radius:10px;
+    background-color: var(--dark-blue);
+    border:1px solid var(--dark-blue);
+    color: #fff;
+    box-shadow:  0 20px 40px rgba(0,0,0,0.4);
+    // border: 3px solid red;
+    // border-bottom: 8px solid purple;
+    @media (max-width: 500px){
+
+    }
+  }
+
+  &-slider{
+    width: calc(100% - 4.15rem);
+    display:inline-block;
+    height: 6px;
+    position: relative;
+    left: 2.3rem;
+    padding:.5rem 0;
+    border-radius: 20px;
+    background-color: var(--slider-background);
+
+        &::after{
+          content: '';
+          position:absolute;
+          top: 1px;
+          left:.1rem;
+          width: calc(100% - 5rem);
+          height: calc(100% - 2px);
+          background-image: -webkit-linear-gradient(right, hsl(335, 100%, 65%), hsl(6, 100%, 80%) 60%);
+          background-image: -o-linear-gradient(right, hsl(335, 100%, 65%), hsl(6, 100%, 80%) 60%);
+          background-image: linear-gradient(to left, hsl(335, 100%, 65%), hsl(6, 100%, 80%) 60%);
+          border-radius: 20px;
+          border: 2px solid var(--very-dark-blue);
+        }
+
+        &::before{
+          content: '';
+          position: absolute;
+          top: 2.8px;
+          right: calc(100% - 25rem);
+          width: 9px;
+          height: 9px;
+          border-radius: 50%;
+          background-color: #fff;
+          z-index: 8;
+          @media (max-width: 1390px){
+            right: calc(100% - 18.7rem);
+          }
+        }
+  }
+
+  &-status{
+    display:flex;
+    justify-content: space-between;
+    padding-bottom: 1.75rem;
+  }
+
+  &-downloaded{
+    &--zero{
+      margin-left: 1.9rem;
+    }
+
+    &--thousand{
+      margin-right: 3.2rem;
+    }
+  }
+
+}
+
+.addtional{
+
+  &-container{
+    position: absolute;
+    z-index: 9;
+    top: -5rem;
+    right: 3rem;
+    // border: 3px solid redt
+    padding: .8rem 1.4rem;
+    display:flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px 8px 0 8px;
+    &::after{
+      content: '';
+      position:absolute;
+      top: 3.6rem;
+      right: .009rem;
+      width: .8rem;
+      height: 1.2rem;
+      border-top: 18px solid #fff;
+      border-left: 18px solid transparent;
+      // padding: 1rem;
+    }
+  }
+}
