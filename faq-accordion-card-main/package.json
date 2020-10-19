@@ -1,0 +1,14 @@
+{
+  "name": "faq-accordion-card-main",
+  "version": "1.0.0",
+  "description": "frontend mentor challenge",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass scss/main.scss css/styles.css -w"
+  },
+  "author": "Amol",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.27.0"
+  }
+}

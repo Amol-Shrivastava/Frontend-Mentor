@@ -1,0 +1,22 @@
+{
+  "name": "frontendmaster_challenge-1",
+  "version": "1.0.0",
+  "description": "frontendMentor challenge-1",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Amol-Shrivastava/frontendmentor.git"
+  },
+  "author": "amol_2488",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Amol-Shrivastava/frontendmentor/issues"
+  },
+  "homepage": "https://github.com/Amol-Shrivastava/frontendmentor#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
