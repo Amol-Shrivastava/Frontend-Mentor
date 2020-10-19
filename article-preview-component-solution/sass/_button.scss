@@ -1,0 +1,34 @@
+.share {
+  &__icon {
+    display: inline-block;
+    // border:3px solid pink;
+    position: relative;
+    z-index: 999;
+    border-radius: 50%;
+    padding: 0.5rem;
+    margin-right: 1rem;
+    background-color: var(--clr-light-gray-blue);
+    cursor: pointer;
+    position: relative;
+    filter:brightness(96%);
+    transform: translateY(.2rem);
+    fill: var(--clr-dark-blue);
+
+    &:hover {
+      filter:brightness(100%);
+    }
+    @media (max-width: 23.9em) {
+      //transform:translateX(2rem) translateY(-.2rem);
+
+      position: absolute;
+      top: .93rem;
+      right: -2.2rem;
+    }
+  }
+}
+
+.icon {
+  background-color: var(--clr-dark-blue);
+  fill: var(--clr-light-gray-blue);
+
+}

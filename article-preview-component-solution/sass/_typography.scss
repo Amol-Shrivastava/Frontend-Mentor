@@ -1,0 +1,48 @@
+.primary-heading{
+  @media (max-width: 59em){
+    margin:-.5rem 0;
+  }
+
+
+  @media (max-width: 32em){
+    font-size: 20px;
+    margin-bottom: .3rem;
+  }
+
+
+}
+
+.primary-para{
+  color: var(--clr-dark-gray-blue);
+  font-weight: 500;
+  line-height: 1.6;
+  transform:translateY(-.9rem);
+  @media (max-width: 59em){
+    margin:1.8rem 0 1.3rem 0;
+  }
+  
+}
+
+.secondary-para{
+  color: var(--clr-black);
+  font-weight: 700;
+  @media (max-width: 59em){
+    // margin: 3rem 0;
+  }
+    &--modified{
+      margin-right: 1rem;
+      font-size: .8rem;
+      letter-spacing: .4rem;
+      color:var(--clr-gray-blue);
+      @media (max-width: 23.9em){
+        // margin-left: -1.1rem;
+        margin-right: 1rem;
+        // border:3px solid red;
+      }
+    }
+
+}
+
+.date{
+    color: var(--clr-gray-blue);
+}
