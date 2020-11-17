@@ -37,4 +37,28 @@ img {
 .grid__container {
   display: grid;
   height: 70vh;
-  background-color: #fff; }
+  background-color: #fff;
+  grid-template-columns: 23rem;
+  grid-template-rows: 10rem auto;
+  grid-template-areas: "svg-cont" "quest-cont";
+  border-radius: 16px; }
+  .grid__container .svg-background-cont {
+    grid-area: svg-cont;
+    background: url("../images/bg-pattern-mobile.svg");
+    background-size: 75%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    justify-items: center; }
+    .grid__container .svg-background-cont .img-cont {
+      display: inline-block;
+      position: absolute;
+      top: -100px;
+      left: 80px; }
+      .grid__container .svg-background-cont .img-cont .mobile-svg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+  .grid__container .question-cont {
+    grid-area: quest-cont;
+    border: 3px solid blue; }

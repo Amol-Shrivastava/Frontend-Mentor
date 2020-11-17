@@ -1,0 +1,86 @@
+@import "variables";
+@mixin flex($fd: row, $js: center, $al: center){
+  display: flex;
+  flex-direction: $fd;
+  justify-content: $js;
+  align-items: $al;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-size: 75%; //1rem = 12px
+  font-family: var(--font);
+  @include flex();
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, var(--soft-violet), var(--soft-blue));
+}
+
+img{
+  max-width: 100%;
+  display:block;
+}
+
+// <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+//custom styling**************
+
+.grid{
+  &__container{
+    display: grid;
+    height: 70vh;
+    // margin-top: 10rem;
+    background-color: #fff;
+    grid-template-columns: 23rem;
+    grid-template-rows: 10rem auto;
+    grid-template-areas: "svg-cont"
+                          "quest-cont";
+    border-radius: 16px;
+
+  .svg-background-cont{
+    grid-area: svg-cont;
+    // border: 3px solid red;
+    background: url('../images/bg-pattern-mobile.svg');
+    background-size: 75%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position:relative;
+    justify-items: center;
+    // margin-top: 2rem;
+      .img-cont{
+      // border: 3px solid red;
+      display: inline-block;
+      position:absolute;
+      top: -100px;
+      left: 80px;
+      // width: 48vw;
+      // height:36vh;
+        .mobile-svg{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .question-cont{
+    grid-area: quest-cont;
+    border: 3px solid blue;
+  }
+
+  }
+
+  &__items{
+      // border-radius: 16px;
+  }
+
+
+
+
+  }
