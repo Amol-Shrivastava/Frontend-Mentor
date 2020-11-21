@@ -35,8 +35,8 @@
   //padding and margin
   --space: 2rem;
 
-  --space-xs: calc(var(--space) / 4);
-  --space-s: calc(var(--space) / 2);
+  --space-xs: calc(var(--space) / 2);
+  --space-s: calc(var(--space) / 1.5);
   --space-md: calc(var(--space) * 1.5);
   --space-lg: calc(var(--space) * 2);
   --space-xlg: calc(val(--space) * 3);
