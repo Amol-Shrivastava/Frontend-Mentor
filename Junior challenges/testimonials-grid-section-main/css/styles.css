@@ -44,6 +44,9 @@ body {
     border-radius: 8px;
     box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
     padding: 1.5rem 1.7rem 1.5rem 1.5rem; }
+    .container .row .info {
+      display: flex;
+      flex-direction: column; }
     .container .row .user {
       display: flex;
       align-items: center;
@@ -61,6 +64,8 @@ body {
         font-size: .8rem; }
         .container .row .user--DescCont .user--title {
           opacity: 50%; }
+    .container .row .text-Info {
+      margin-top: auto; }
     .container .row .text-heading {
       font-size: 1.32rem;
       line-height: 1.2;
