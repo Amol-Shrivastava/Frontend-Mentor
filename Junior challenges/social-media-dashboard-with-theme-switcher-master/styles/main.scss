@@ -1,9 +1,49 @@
+:root {
+  --improvement-clr: hsl(163, 72%, 41%);
+  --decline-clr: hsl(356, 69%, 56%);
+  --fb-clr: hsl(208, 92%, 53%);
+  --twt-clr: hsl(203, 89%, 53%);
+  --insta-clr: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
+  --ytb-clr: hsl(348, 97%, 39%);
+
+  //Dark Theme
+  --bg-clr: hsl(230, 17%, 14%);
+  --topBg-clr: hsl(232, 19%, 15%);
+  --card-clr: hsl(228, 28%, 20%);
+  --text-clr: hsl(228, 34%, 66%);
+  --white-clr: hsl(0, 0%, 100%);
+
+  //Light Theme
+  --Lgt-bg-clr: var(--white-clr);
+
+  --Lgt-topBg-clr: hsl(225, 100%, 98%);
+
+  --Lgt-card-clr: hsl(227, 47%, 96%);
+
+  --Lgt-text-clr: hsl(228, 12%, 44%);
+
+  --Lgt-dark-text-clr: hsl(230, 17%, 14%);
+
+  //toggle styling
+  --toggle-clr: hsl(230, 22%, 74%);
+
+  //font styling
+  --card-heading-size: 14px;
+
+  --font-fam: "Inter", sans-serif;
+
+  //padding and margin
+  --space: 2rem;
+
+  --space-xs: calc(var(--space) / 4);
+  --space-s: calc(var(--space) / 2);
+  --space-md: calc(var(--space) * 1.5);
+  --space-lg: calc(var(--space) * 2);
+  --space-xlg: calc(val(--space) * 3);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
-  background: red;
 }
