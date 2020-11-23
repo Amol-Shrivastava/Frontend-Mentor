@@ -1,7 +1,67 @@
+:root {
+  --improvement-clr: hsl(163, 72%, 41%);
+  --decline-clr: hsl(356, 69%, 56%);
+  --fb-clr: hsl(208, 92%, 53%);
+  --twt-clr: hsl(203, 89%, 53%);
+  --insta-clr: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
+  --ytb-clr: hsl(348, 97%, 39%);
+  --bg-clr: var(--white-clr);
+  --topBg-clr: hsl(225, 100%, 98%);
+  --card-clr: hsl(227, 47%, 96%);
+  --text-clr: hsl(228, 12%, 44%);
+  --dark-text-clr: hsl(230, 17%, 14%);
+  --toggle-clr: hsl(230, 22%, 74%);
+  --card-heading-size: 14px;
+  --font-fam: "Inter", sans-serif;
+  --space: 2rem;
+  --space-xs: calc(var(--space) / 2);
+  --space-s: calc(var(--space) / 1.5);
+  --space-md: calc(var(--space) * 1.5);
+  --space-lg: calc(var(--space) * 2);
+  --space-xlg: calc(val(--space) * 3);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-clr: hsl(230, 17%, 14%);
+    --topBg-clr: hsl(232, 19%, 15%);
+    --card-clr: hsl(228, 28%, 20%);
+    --text-clr: hsl(228, 34%, 66%);
+    --white-clr: hsl(0, 0%, 100%);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+body {
+  font-size: 62.5%;
+  background: grey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.dark {
+  --bg-clr: hsl(230, 17%, 14%);
+  --topBg-clr: hsl(232, 19%, 15%);
+  --card-clr: hsl(228, 28%, 20%);
+  --text-clr: hsl(228, 34%, 66%);
+  --white-clr: hsl(0, 0%, 100%);
 }
 /*# sourceMappingURL=main.css.map */

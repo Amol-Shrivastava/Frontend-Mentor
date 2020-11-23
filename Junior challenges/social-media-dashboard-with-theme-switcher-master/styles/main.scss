@@ -6,23 +6,16 @@
   --insta-clr: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
   --ytb-clr: hsl(348, 97%, 39%);
 
-  //Dark Theme
-  --bg-clr: hsl(230, 17%, 14%);
-  --topBg-clr: hsl(232, 19%, 15%);
-  --card-clr: hsl(228, 28%, 20%);
-  --text-clr: hsl(228, 34%, 66%);
-  --white-clr: hsl(0, 0%, 100%);
-
   //Light Theme
-  --Lgt-bg-clr: var(--white-clr);
+  --bg-clr: var(--white-clr);
 
-  --Lgt-topBg-clr: hsl(225, 100%, 98%);
+  --topBg-clr: hsl(225, 100%, 98%);
 
-  --Lgt-card-clr: hsl(227, 47%, 96%);
+  --card-clr: hsl(227, 47%, 96%);
 
-  --Lgt-text-clr: hsl(228, 12%, 44%);
+  --text-clr: hsl(228, 12%, 44%);
 
-  --Lgt-dark-text-clr: hsl(230, 17%, 14%);
+  --dark-text-clr: hsl(230, 17%, 14%);
 
   //toggle styling
   --toggle-clr: hsl(230, 22%, 74%);
@@ -42,8 +35,45 @@
   --space-xlg: calc(val(--space) * 3);
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    //Dark Theme
+    --bg-clr: hsl(230, 17%, 14%);
+    --topBg-clr: hsl(232, 19%, 15%);
+    --card-clr: hsl(228, 28%, 20%);
+    --text-clr: hsl(228, 34%, 66%);
+    --white-clr: hsl(0, 0%, 100%);
+  }
+}
+
+@mixin flex($dir: row, $jus: center, $ali: center) {
+  display: flex;
+  flex-direction: $dir;
+  justify-content: $jus;
+  align-items: $ali;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-size: 62.5%; //1rem = 10px (14px = 87.5%)
+  background: grey;
+  @include flex(column);
+  height: 100vh;
+}
+
+.dark {
+  //Dark Theme
+  --bg-clr: hsl(230, 17%, 14%);
+  --topBg-clr: hsl(232, 19%, 15%);
+  --card-clr: hsl(228, 28%, 20%);
+  --text-clr: hsl(228, 34%, 66%);
+  --white-clr: hsl(0, 0%, 100%);
+}
+
+// .container {
+// }
